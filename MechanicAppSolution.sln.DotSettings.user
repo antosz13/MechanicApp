@@ -1,0 +1,18 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=bfe3963e_002D83fc_002D4d35_002Db141_002Da49caf397f69/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="AddJobAsync_ShouldCallAddOnRepository_WithJob" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::AB0263E0-458C-486B-9568-2A87341E4801::net8.0::MechanicApp.Tests.ClientsControllerUnitTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::AB0263E0-458C-486B-9568-2A87341E4801::net8.0::MechanicApp.Tests.ClientServiceUnitTests.Get&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::AB0263E0-458C-486B-9568-2A87341E4801::net8.0::MechanicApp.Tests.ClientServiceUnitTests.Add&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::AB0263E0-458C-486B-9568-2A87341E4801::net8.0::MechanicApp.Tests.ClientServiceUnitTests.Update&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f9b7b45e_002D3ab3_002D4553_002Da62f_002D00a45a85833c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Update" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::AB0263E0-458C-486B-9568-2A87341E4801::net8.0::MechanicApp.Tests.ClientServiceUnitTests.Update&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::AB0263E0-458C-486B-9568-2A87341E4801::net8.0::MechanicApp.Tests.ClientServiceUnitTests.Delete&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::AB0263E0-458C-486B-9568-2A87341E4801::net8.0::MechanicApp.Tests.ClientServiceUnitTests.GetJobsOfClient&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::AB0263E0-458C-486B-9568-2A87341E4801::net8.0::MechanicApp.Tests.ClientServiceUnitTests.GetAll&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::AB0263E0-458C-486B-9568-2A87341E4801::net8.0::MechanicApp.Tests.ClientServiceUnitTests.Add&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

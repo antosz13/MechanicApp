@@ -1,0 +1,12 @@
+C:\Users\Antosz\Desktop\MechanicAppSolution\MechanicApp.Shared\bin\x86\Release\net8.0\MechanicApp.Shared.deps.json
+C:\Users\Antosz\Desktop\MechanicAppSolution\MechanicApp.Shared\bin\x86\Release\net8.0\MechanicApp.Shared.dll
+C:\Users\Antosz\Desktop\MechanicAppSolution\MechanicApp.Shared\bin\x86\Release\net8.0\MechanicApp.Shared.pdb
+C:\Users\Antosz\Desktop\MechanicAppSolution\MechanicApp.Shared\obj\x86\Release\net8.0\MechanicApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Antosz\Desktop\MechanicAppSolution\MechanicApp.Shared\obj\x86\Release\net8.0\MechanicApp.Shared.AssemblyInfoInputs.cache
+C:\Users\Antosz\Desktop\MechanicAppSolution\MechanicApp.Shared\obj\x86\Release\net8.0\MechanicApp.Shared.AssemblyInfo.cs
+C:\Users\Antosz\Desktop\MechanicAppSolution\MechanicApp.Shared\obj\x86\Release\net8.0\MechanicApp.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Antosz\Desktop\MechanicAppSolution\MechanicApp.Shared\obj\x86\Release\net8.0\MechanicApp.Shared.sourcelink.json
+C:\Users\Antosz\Desktop\MechanicAppSolution\MechanicApp.Shared\obj\x86\Release\net8.0\MechanicApp.Shared.dll
+C:\Users\Antosz\Desktop\MechanicAppSolution\MechanicApp.Shared\obj\x86\Release\net8.0\refint\MechanicApp.Shared.dll
+C:\Users\Antosz\Desktop\MechanicAppSolution\MechanicApp.Shared\obj\x86\Release\net8.0\MechanicApp.Shared.pdb
+C:\Users\Antosz\Desktop\MechanicAppSolution\MechanicApp.Shared\obj\x86\Release\net8.0\ref\MechanicApp.Shared.dll
