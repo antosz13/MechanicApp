@@ -26,8 +26,8 @@ namespace MechanicApp
                 options.UseLazyLoadingProxies();
             }, ServiceLifetime.Singleton);
 
-            builder.Services.AddSingleton<IClientService, ClientService>();
-            builder.Services.AddSingleton<IJobService, JobService>();
+            builder.Services.AddSingleton<IClientRepo, ClientRepo>();
+            builder.Services.AddSingleton<IJobRepo, JobRepo>();
 
             var app = builder.Build();
 
