@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Antosz\\Desktop\\MechanicAppSolution\\MechanicApp.UI\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\Antosz\\Desktop\\MechanicAppSolution\\MechanicApp.UI\\obj\\Debug\\net8.0\\compressed\\xwqhhmgp6p.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\Antosz\\Desktop\\MechanicAppSolution\\MechanicApp.UI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\MechanicApp.UI.styles.css",
+      "PackagePath": "staticwebassets\\MechanicApp.UI.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\Antosz\\Desktop\\MechanicAppSolution\\MechanicApp.UI\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\Antosz\\Desktop\\MechanicAppSolution\\MechanicApp.UI\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Antosz\\Desktop\\MechanicAppSolution\\MechanicApp.UI\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Antosz\\Desktop\\MechanicAppSolution\\MechanicApp.UI\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\Antosz\\Desktop\\MechanicAppSolution\\MechanicApp.UI\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\Antosz\\Desktop\\MechanicAppSolution\\MechanicApp.UI\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Antosz\\Desktop\\MechanicAppSolution\\MechanicApp.UI\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MechanicApp.UI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.MechanicApp.UI.props",
+      "PackagePath": "build\\MechanicApp.UI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.MechanicApp.UI.props",
+      "PackagePath": "buildMultiTargeting\\MechanicApp.UI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.MechanicApp.UI.props",
+      "PackagePath": "buildTransitive\\MechanicApp.UI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

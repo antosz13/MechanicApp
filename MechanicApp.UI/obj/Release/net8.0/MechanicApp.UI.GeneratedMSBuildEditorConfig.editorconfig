@@ -1,0 +1,79 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = MechanicApp.UI
+build_property.RootNamespace = MechanicApp.UI
+build_property.ProjectDir = C:\Users\Antosz\Desktop\MechanicAppSolution\MechanicApp.UI\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Antosz\Desktop\MechanicAppSolution\MechanicApp.UI
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Antosz/Desktop/MechanicAppSolution/MechanicApp.UI/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Antosz/Desktop/MechanicAppSolution/MechanicApp.UI/Components/ClientForm.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDbGllbnRGb3JtLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Antosz/Desktop/MechanicAppSolution/MechanicApp.UI/Components/JobForm.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xKb2JGb3JtLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Antosz/Desktop/MechanicAppSolution/MechanicApp.UI/Pages/ClientAdd.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50QWRkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Antosz/Desktop/MechanicAppSolution/MechanicApp.UI/Pages/ClientDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50RGV0YWlscy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Antosz/Desktop/MechanicAppSolution/MechanicApp.UI/Pages/ClintsList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpbnRzTGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Antosz/Desktop/MechanicAppSolution/MechanicApp.UI/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Antosz/Desktop/MechanicAppSolution/MechanicApp.UI/Pages/JobAdd.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSm9iQWRkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Antosz/Desktop/MechanicAppSolution/MechanicApp.UI/Pages/JobDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSm9iRGV0YWlscy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Antosz/Desktop/MechanicAppSolution/MechanicApp.UI/Pages/JobsList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSm9ic0xpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Antosz/Desktop/MechanicAppSolution/MechanicApp.UI/Pages/JobsPerClientList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSm9ic1BlckNsaWVudExpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Antosz/Desktop/MechanicAppSolution/MechanicApp.UI/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Antosz/Desktop/MechanicAppSolution/MechanicApp.UI/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-fuh0zbund4
+
+[C:/Users/Antosz/Desktop/MechanicAppSolution/MechanicApp.UI/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-e9wgo1awwc
