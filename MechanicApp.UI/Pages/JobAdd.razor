@@ -1,0 +1,20 @@
+﻿@page "/job/add"
+@using MechanicApp.Shared
+@using MechanicApp.UI.Services
+@using MechanicApp.UI.Components
+@inject IJobService JobService
+@inject NavigationManager NavigationManager
+
+<h3>Job Creater</h3>
+
+<JobForm Job="Job" OnValidSubmit="AddJobAsync" ButtonText="Add Job" />
+
+@code {
+    private Job Job { get; set; } = new();
+
+    private async Task AddJobAsync()
+    {
+        await JobService.AddJobAsync(Job);
+        NavigationManager.NavigateTo("/job/list");
+    }
+}

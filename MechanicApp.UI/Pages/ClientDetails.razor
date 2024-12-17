@@ -1,0 +1,42 @@
+﻿@page "/client/{ClientId:guid}"
+@using MechanicApp.Shared
+@using MechanicApp.UI.Components
+@using MechanicApp.UI.Services
+@inject IClientService ClientService
+@inject NavigationManager NavigationManager
+
+@if (Client is null)
+{
+    <p>Loading..</p>
+}
+else
+{
+    <ClientForm Client="Client" OnValidSubmit="UpdateAsync" ButtonText="Update Client" />
+    <a href="/client/@Client.ClientId/jobs" class="btn btn-dark">Jobs</a>
+    <button class="btn btn-warning" @onclick="DeleteAsync">Delete</button>
+}
+
+@code {
+    
+    [Parameter]
+    public Guid ClientId { get; set; }
+    
+    private Client? Client { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Client = await ClientService.GetClientAsync(ClientId);
+    }
+
+    private async Task DeleteAsync()
+    {
+        await ClientService.DeleteClientAsync(ClientId);
+        NavigationManager.NavigateTo("/client/list");
+    }
+
+    private async Task UpdateAsync()
+    {
+        await ClientService.UpdateClientAsync(ClientId, Client);
+        NavigationManager.NavigateTo("/client/list");
+    }
+}

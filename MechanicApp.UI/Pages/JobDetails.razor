@@ -1,0 +1,45 @@
+﻿@page "/job/{JobId:guid}"
+@using MechanicApp.Shared
+@using MechanicApp.UI.Components
+@using MechanicApp.UI.Services
+@inject IJobService JobService
+@inject IClientService ClientService
+@inject NavigationManager NavigationManager
+
+@if (Job is null)
+{
+    <p>Loading..</p>
+}
+else
+{
+    <JobForm Job="Job" OnValidSubmit="UpdateAsync" ButtonText="Update Job" />
+    <button class="btn btn-warning" @onclick="DeleteAsync">Delete</button>
+}
+
+@code {
+    
+    [Parameter]
+    public Guid JobId { get; set; }
+    
+    private Job? Job { get; set; }
+
+    private IEnumerable<Client>? Clients { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Job = await JobService.GetJobAsync(JobId);
+        Clients = await ClientService.GetAllClientAsync();
+    }
+
+    private async Task DeleteAsync()
+    {
+        await JobService.DeleteJobAsync(JobId);
+        NavigationManager.NavigateTo("/job/list");
+    }
+
+    private async Task UpdateAsync()
+    {
+        await JobService.UpdateJobAsync(JobId, Job);
+        NavigationManager.NavigateTo("/job/list");
+    }
+}

@@ -1,0 +1,110 @@
+﻿@using MechanicApp.Shared
+@using MechanicApp.UI.Services
+@inject IClientService ClientService
+
+<EditForm Model="Job" OnValidSubmit="() => OnValidSubmit()">
+    <DataAnnotationsValidator />
+
+    <div class="mb3">
+        <label class="form-label" for="clientId">Client</label>
+        <InputSelect id="clientId" @bind-Value="@Job.ClientId" class="form-input" placeholder="almaaaaaa">
+            <option value="" disabled="disabled" selected="selected" hidden="hidden">Select Client!</option>
+            @foreach (var client in Clients)
+            {
+                <option value="@client.ClientId">@client.Name</option>
+            }
+        </InputSelect>
+        <ValidationMessage For="() => Job.ClientId"/>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Numberplate</label>
+        <InputText @bind-Value="@Job.NumberPlate" class="form-input"/>
+        <ValidationMessage For="() => Job.NumberPlate" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Year of Production</label>
+        <InputDate @bind-Value="@Job.YearOfProduction" class="form-input"/>
+        <ValidationMessage For="() => Job.YearOfProduction" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Job Category</label>
+        <InputSelect @bind-Value="@Job.Category" class="form-input">
+            <option value="" disabled="disabled" selected="selected" hidden>Select Category!</option>
+            @foreach (var category in Enum.GetValues(typeof(Job.JobCategory)))
+            {
+                <option value="@category">@category</option>
+            }
+        </InputSelect>
+        <ValidationMessage For="() => Job.Category" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Job Description</label>
+        <InputTextArea @bind-Value="@Job.Description" class="form-input" />
+        <ValidationMessage For="() => Job.Description" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Job Seriousness</label>
+        <InputSelect @bind-Value="@Job.Seriousness" class="form-input">
+            <option value="" disabled="disabled" selected="selected" hidden>Select Seriousness!</option>
+            @for (int i = 1; i <= 10; i++)
+            {
+                <option value="@i">@i</option>
+            }
+        </InputSelect>
+        <ValidationMessage For="() => Job.Seriousness" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Job Status</label>
+        <InputSelect @bind-Value="@Job.Status" class="form-input">
+            <option value="" disabled="disabled" selected="selected" hidden>Select Status!</option>
+            @if (Job.Status != null)
+            {
+                switch (Job.Status)
+                {
+                    case Job.JobStatus.Assigned:
+                        <option value="@Job.JobStatus.Assigned">Assigned</option>
+                        <option value="@Job.JobStatus.InProgress">In Progress</option>
+                        <option value="@Job.JobStatus.Completed">Completed</option>
+                        break;
+                    case Job.JobStatus.InProgress:
+                        <option value="@Job.JobStatus.InProgress">In Progress</option>
+                        <option value="@Job.JobStatus.Completed">Completed</option>
+                        break;
+                    case Job.JobStatus.Completed:
+                        <option value="@Job.JobStatus.Completed">Completed</option>
+                        break;
+                }
+            }
+            else
+            {
+                @foreach (var status in Enum.GetValues(typeof(Job.JobStatus)))
+                {
+                    <option value="@status">@status</option>
+                }
+            }
+        </InputSelect>
+        <ValidationMessage For="() => Job.Status" />
+    </div>
+    <div asp-validation-summary="All" class="text-danger"></div>
+    
+    <button class="btn btn-primary" type="submit">@ButtonText</button>
+
+</EditForm>
+
+@code {
+    [Parameter]
+    public Job Job { get; set; }
+
+    private IEnumerable<Client> Clients { get; set; } = new List<Client>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        Clients = (await ClientService.GetAllClientAsync()).ToList();
+    }
+    
+    [Parameter]
+    public Func<Task> OnValidSubmit { get; set; }
+    
+    [Parameter]
+    public string ButtonText { get; set; }
+}

@@ -1,0 +1,34 @@
+﻿@using MechanicApp.Shared
+
+<EditForm Model="Client" OnValidSubmit="() => OnValidSubmit()">
+    <DataAnnotationsValidator />
+
+    <div class="mb-3">
+        <label class="form-label">Name</label>
+        <InputText @bind-Value="@Client.Name" class="form-input"/>
+        <ValidationMessage For="() => Client.Name" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Email</label>
+        <InputText @bind-Value="@Client.Email" class="form-input"/>
+        <ValidationMessage For="() => Client.Email" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Address</label>
+        <InputText @bind-Value="@Client.Address" class="form-input"/>
+        <ValidationMessage For="() => Client.Address" />
+    </div>
+
+    <button class="btn btn-primary" type="submit">@ButtonText</button>
+</EditForm>
+
+@code {
+    [Parameter]
+    public Client Client { get; set; }
+    
+    [Parameter]
+    public Func<Task> OnValidSubmit { get; set; }
+    
+    [Parameter]
+    public string ButtonText { get; set; }
+}

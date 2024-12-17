@@ -1,0 +1,20 @@
+﻿@page "/client/add"
+@using MechanicApp.Shared
+@using MechanicApp.UI.Services
+@using MechanicApp.UI.Components
+@inject IClientService ClientService
+@inject NavigationManager NavigationManager
+
+<h3>Adding New Client</h3>
+
+<ClientForm Client="Client" OnValidSubmit="AddClientAsync" ButtonText="Add Client" />
+
+@code {
+    private Client Client { get; set; } = new();
+
+    private async Task AddClientAsync()
+    {
+        await ClientService.AddClientAsync(Client);
+        NavigationManager.NavigateTo("/client/list");
+    }
+}
